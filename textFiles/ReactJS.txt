@@ -1,0 +1,50 @@
+  
+  ------------------------- Details About ReactJS ------------------------
+
+  1.It A JS frontEnd Library used to create intractive long WebApplications.
+
+  2.Developers created ReactJs to Build COmplex WebApplications Simpler.
+
+  3.Babel Tool Is Used to convert your old JS Code Into New ES Version Of Code.
+
+  4. Components , props , state these are react Important Concepts.
+
+  5. It Use JSX to implement dom manipulation In ReactJS.
+
+
+          ---------------- SetUp ReactJS ---------------
+
+ 1.Need Node JS For react JS
+
+ 2.Install NPM 
+
+ 3.in browser install react dev tool Xtension
+
+ 4.Install ES7 Xtension VSC
+
+ 4.Open VSC Settings Search Emment ADD lan key = javascript value=javascriptreact
+
+
+ ----------- Creating React App ----------------
+
+1. npx create-react-app AppName
+
+------------------ React Files & Node Modules ---------
+1.in NodeModules Folder There is React need Modules present here.
+
+2.Public Folder html and all other resources here.
+
+3. Src Folder the Actual react code we write.
+
+4. root is app.js is collections of react component.
+
+5.We need to create a all component as seperate js file.
+
+6. reactDom Creates a Virtual Dom then Using RVD then manipulate the actual dom.
+
+------------------------------ JSX Javascript XML ----------------
+1.It Differs from HTML.
+
+2.naming and attributes are differ in JSX.
+
+3.{} --> used to js in JSX -->  <p>{js}</p>
