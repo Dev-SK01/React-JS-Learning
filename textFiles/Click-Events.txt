@@ -1,0 +1,11 @@
+ ----------------------- Click Events In ReactJS -----------------
+
+ 1.We can call The JSX Events in our HTML Component.
+
+ 2.When we pass the param in the callback function the function call its self.
+
+ 3.It don't wait for click event.
+
+ 4. () ==> use anonymous function to solve the issue.
+
+ 5. <p onClick{callback}> </p>

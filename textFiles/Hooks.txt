@@ -1,0 +1,25 @@
+--------------------------- Hooks In React ----------------
+
+1. Inbuilt react Function Is called Hooks. Each Hooks has their Own Working.
+
+2. We Need to import hooks to our component js file. While importing function or Hook  we need to 
+   {Hook Name} Brases.
+
+3. We cannot use Hooks in class component.
+
+4.cannot call Hooks In conditional Statements.
+
+5. when we call the funcion inside hook it excutes page reloads.to avoid we
+   need to call inside anonymous function. 
+
+--------------------------- USE STATE Hook ----------------
+
+1. it is used to which component state will be change we can use use state.
+
+2. it means the data going to be update without reloading.
+
+3.UseState returns a array of values. It has two value current State and changed state.
+
+3. [current state , change state] = useState(default state);
+
+4. changedState() --> we can get the second arugument as function.

@@ -1,0 +1,17 @@
+ 
+  ---------------------------- Functional Components -----------------
+
+1.In react the components file & name are start in Capital letter.
+  Each Component Has each JS file 
+
+2. ctrl + alt + p --> used search files in VS code 
+
+3.Xtension ES7 Used To provide component snippet For React Component.
+
+4.ctrl + alt + r --> used to get the snippet.
+
+5.<component name /> --> call the component.
+
+6. Component are reusable. 
+
+7. Raw Object Cannot be Used in ReactJS.
