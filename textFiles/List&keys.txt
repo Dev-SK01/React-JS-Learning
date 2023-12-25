@@ -1,0 +1,12 @@
+   ---------------------- List & Keys In ReactJS -----------------------
+
+1. Creating A HTML list In React.
+
+2. We can Use JSX To Done the List
+
+3.In list When we need to change the state we need to mention the  key attribute in JSX
+  because we need to control the state via the key in list.
+
+4. When change the property of the object we call whole object using 
+   {....objectName , property} --> this call the whole object and change the 
+   specified property in the object.

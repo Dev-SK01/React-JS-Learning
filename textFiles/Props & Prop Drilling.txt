@@ -1,0 +1,20 @@
+--------------- Props & Props Drilling In React JS --------------
+
+1.Props means passing the param in the component in React.
+
+2.In function we call param in component Its props.
+
+3.Using props we can use the components children component data it means we can 
+  share the data between the components.
+
+4. props Drilling Means sharing the props to deep in the components.
+
+5. The props are OBJECT
+
+6.We can set Default props for Nothing Props Is Passed.
+
+ component.defaultProps{
+    property : value,
+ }
+
+7. Props Expanined in Footer.js File ^_^ 

@@ -20,6 +20,6 @@
 
 3.UseState returns a array of values. It has two value current State and changed state.
 
-3. [current state , change state] = useState(default state);
+3. [current state , change state] = useState(default state value);
 
 4. changedState() --> we can get the second arugument as function.
