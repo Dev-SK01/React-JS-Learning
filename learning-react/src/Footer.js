@@ -1,16 +1,16 @@
 import React from 'react'
 import './App.css'
+import { itemCount } from './List_Keys';
 
-const Footer = ({react,length}) => {
-    const year = new Date();
+const Footer = ({react}) => {
   return (
-    <footer className='footer'  style={{fontSize:'1.5rem' , backgroundColor:'blueviolet'}}>
-        <p>CopyRight &copy; {year.getFullYear()}.All Rights Reserved. {length} : {react}</p>
+    <footer className='footer'  style={{fontSize:'1.2rem' , backgroundColor:'blueviolet'}}>
+      <p>{itemCount}: {react}</p>
     </footer>
   )
 }
 
 Footer.defaultProps = {
-   react : 'React'
+   react : 'Elements'
 }
 export  {Footer};

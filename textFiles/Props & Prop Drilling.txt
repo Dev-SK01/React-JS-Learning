@@ -17,4 +17,8 @@
     property : value,
  }
 
-7. Props Expanined in Footer.js File ^_^ 
+7. Props Expanined in Footer.js File ^_^ ;
+
+8. passing the data via the component calling arrtibute.
+
+<Header data={somedata} />

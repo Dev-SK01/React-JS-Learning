@@ -1,0 +1,9 @@
+--------------------- controlled-component-inputs ----------------
+
+1.Controlled State is input controlled by the use state Hook.
+
+2.We controll the input by the Hook 
+
+const [state , newstate] = useState(init value);
+
+3. using these state we controll the data getting the state.
