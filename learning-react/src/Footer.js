@@ -1,10 +1,12 @@
 import React from 'react'
 import './App.css'
 
-const Footer = ({react}) => {
+const Footer = ({react , length}) => {
   return (
-    <footer className='footer'  style={{fontSize:'1.2rem' , backgroundColor:'blueviolet'}}>
-      <p>{react}</p>
+    <footer className='footer'>
+      <p><i className="bi bi-person-walking"></i>
+      {length} {react}
+      </p>
     </footer>
   )
 }

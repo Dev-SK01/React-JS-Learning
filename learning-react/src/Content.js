@@ -12,9 +12,7 @@ export const Content = () => {
     return (
         <>
             <Controlled_Inputs />
-            {/* calling the footer component */}
-            {/* prop drilling expianed */}
-            <Footer react="Footer Division" />
+            
         </>
     )
 }

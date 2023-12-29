@@ -2,25 +2,16 @@ import React, { useState } from 'react'
 import { List_Keys } from './List_Keys';
 import './App.css'
 import { ExampleUSeState } from './Use_State';
+import { Footer } from './Footer';
 
-let ListData = [
-    {
-        id: 1,
-        checked: false,
-        data: 'Test Item'
-    },
-    {
-        id: 2,
-        checked: true,
-        data: 'Test Item'
-    }
-];
+const ParsedLocalList = JSON.parse(localStorage.getItem('ListData'));
+
 // -------------------------------------------------------
 
 function Controlled_Inputs() {
 
     // list and keys
-    const [itemobj, setItem] = useState(ListData)
+    const [itemobj, setItem] = useState(ParsedLocalList)
 
     function handlechange(id) {
         const list_item = itemobj.map((item) => (
@@ -48,21 +39,18 @@ function Controlled_Inputs() {
         const [listItem, setListItem] = useState('')
 
         function setInputData(inputListData) {
-            const id = ListData.length ? ListData[ListData.length - 1].id + 1 : 1;
+            const id = itemobj.length ? itemobj[itemobj.length - 1].id + 1 : 1;
             const NewListData = { id, checked: false, data: inputListData };
-            const addListData = [...ListData, NewListData];
-            ListData.push(NewListData);
-            setItem(NewListData);
-            console.log(ListData);
+            const addListData = [...itemobj, NewListData];
+            // ListData.push(NewListData);
+            setItem(addListData);
             localStorage.setItem('ListData', JSON.stringify(addListData));
         }
 
         function handleListSubmit(e) {
             e.preventDefault();
-            const Listdata = listItem;
-            console.log(Listdata)
             // adding the list to the ListData Object
-            setInputData(Listdata)
+            setInputData(listItem)
             // clearing the input after list added
             setListItem('');
         }
@@ -73,18 +61,16 @@ function Controlled_Inputs() {
                     {/* Input Field to get the list */}
                     <input
                         type="text"
-                        autoFocus
                         id='list-input'
                         placeholder='Enter Your List To Add'
                         required
                         value={listItem}
                         onChange={(e) => (setListItem(e.target.value))}
+                        className='input'
                     />
                     <button
-                        type='submit'
-
-                    >
-                        Add List
+                        type='submit' className='add-btn'>
+                       <i className="bi bi-send-plus-fill"></i>
                     </button>
                 </form>
 
@@ -101,16 +87,19 @@ function Controlled_Inputs() {
             <AddListElement />
             <section className='Content'>
 
-                <ExampleUSeState />
+                {/* <ExampleUSeState /> */}
                 <List_Keys
                     ItemObj={itemobj}
                     handleDelete={handleDelete}
-                    handlechange={handlechange} />
+                    handlechange={handlechange} 
+                />
 
             </section>
+
+            <Footer react="List You Have !" length={itemobj.length} />
 
         </>
     )
 }
 
-export { Controlled_Inputs, ListData };
+export { Controlled_Inputs };

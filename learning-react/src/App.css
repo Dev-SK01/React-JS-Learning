@@ -2,6 +2,9 @@
   text-align: center;
 }
 
+body{
+  position:relative;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -9,25 +12,173 @@
   }
 }
 
-.Content{
-  height:89.5vh;
-  text-align: center;
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.header h1 {
+  width: 60%;
+  margin-block: .5rem;
+  border-radius: 15px;
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow:  -16px 16px 32px #dcdcdc,
+               16px -16px 32px #e4e4e4;
+}
+
+.List-form {
+  background-color: rgb(27, 91, 148);
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border-radius: 5px;
+  position: relative;
+  background: #e0e0e0;
+  box-shadow: 20px 20px 60px #bebebe,
+    -20px -20px 60px #ffffff;
+}
+
+.List-form input[type=text] {
+  border: none;
+  text-decoration: none;
+  padding-inline: 1rem;
+  padding-block: .6rem;
+  width: 90%;
+  border-radius: 10px;
+  font-weight: bolder;
+  color: rgb(12, 12, 12);
+  font-size: 1rem;
+}
+
+.List-form input::placeholder {
+  font-weight: bolder;
+  color: rgb(12, 12, 12);
+  opacity: .7;
+  font-size: 1rem;
+}
+
+.List-form .add-btn {
+  border: none;
+  background: transparent;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 1.5rem;
+}
+.add-btn i:hover{
+  background-color: rgb(244, 255, 244);
+}
+.List-form .add-btn i {
+  font-size: 2rem;
+  color:rgb(19, 18, 18);
+}
+
+.empty-list{
+  height: 250px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
-  .Text{
-    color: blueviolet;
-    font-weight: bold;
-    font-size:1.2rem;
-  }
+  border-radius: 10px;
+  margin-top:5rem;
+  margin-bottom: 1rem;
+  width: 100%;
 }
 
+.empty-list i{
+  font-size:5rem;
+  color: rgb(22, 22, 22);
+  animation: 2s App-logo-spin infinite;
+}
+
+.empty-list p{
+  margin-top:1.5rem ;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  color: rgb(31, 31, 31);
+ 
+}
+
+.list-div{
+  margin-top:4rem ;
+  background: #e0e0e0;
+  box-shadow: 20px 20px 60px #bebebe,
+    -20px -20px 60px #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.list-div ul{
+
+  position:relative;
+}
+.list-div li{
+  text-decoration: none;
+  background-color: white;
+  padding-inline:10rem;
+  list-style: none;
+margin-bottom:1rem ;
+margin-top: 1rem;
+  
+}
+.checkbox{
+  position: absolute;
+  left: 0;
+  width: 25px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(87, 85, 85);
+}
+.item-data{
+  font-size: bolder;
+  font-size: 1.5rem;
+}
+.list-btn{
+  border: none;
+  background:transparent;
+  position: absolute;
+  right: 1rem;
+}
+
+.list-btn i{
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: bolder;
+
+}
+
+.list-btn i:hover{
+  background-color: red;
+}
+.footer {
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow: -20px -20px 60px #bebebe,
+    20px 20px 60px #ffffff;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem;
+}
+
+.footer i{
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+.footer p{
+  font-size: 1.5rem;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

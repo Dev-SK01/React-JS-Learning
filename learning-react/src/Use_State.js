@@ -5,7 +5,7 @@ import React from "react";
 const ExampleUSeState = () => {
 
     function textChange() {
-        const textList = ['Grow', 'Give'];
+        const textList = ['Earn','Grow', 'Give'];
         const index = Math.floor(Math.random() * 2);
         // calling the state functions
         setText(textList[index]);
