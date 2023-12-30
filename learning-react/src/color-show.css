@@ -2,3 +2,26 @@ p{
     color: blue;
     font-weight: bolder;
 }
+
+.color-div{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(228, 231, 231);
+    margin: 1rem;
+}
+.color-holder{
+    display: flex;
+    justify-content: center;
+}
+.color-input{
+    padding-inline:.5rem ;
+    border: none;
+    background-color: rgb(214, 214, 214);
+}
+
+button{
+    font-weight: bold;
+    margin-inline:10px ;
+}
+
+
