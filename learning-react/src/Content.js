@@ -1,6 +1,6 @@
 import React from 'react'
 import { Controlled_Inputs } from './Controlled-Inputs';
-import { Footer } from './Footer';
+import Color_show from './Color_show';
 
 
 
@@ -12,6 +12,8 @@ export const Content = () => {
     return (
         <>
             <Controlled_Inputs />
+
+            <Color_show />
             
         </>
     )

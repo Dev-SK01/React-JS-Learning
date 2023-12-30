@@ -70,7 +70,7 @@ function Controlled_Inputs() {
                     />
                     <button
                         type='submit' className='add-btn'>
-                       <i className="bi bi-send-plus-fill"></i>
+                      <i className="bi bi-check2-circle"></i>
                     </button>
                 </form>
 
@@ -96,7 +96,7 @@ function Controlled_Inputs() {
 
             </section>
 
-            <Footer react="List You Have !" length={itemobj.length} />
+            <Footer react=" You Have " length={itemobj.length} />
 
         </>
     )

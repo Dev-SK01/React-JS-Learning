@@ -1,19 +1,19 @@
 {
-  "short_name": "Todo App",
-  "name": "Todo App By React",
+  "short_name": "Notes Edu",
+  "name": "Notes Edu By WebMa ❤️",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
+      "src": "notes-edu.png",
+      "sizes": "64x64 32x32 24x24 16x16 512x512",
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "notes-edu.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "notes-edu.png",
       "type": "image/png",
       "sizes": "512x512"
     }

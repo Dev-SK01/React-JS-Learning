@@ -5,7 +5,7 @@ const Footer = ({react , length}) => {
   return (
     <footer className='footer'>
       <p><i className="bi bi-person-walking"></i>
-      {length} {react}
+      {react} {length + ' Lists :)'} 
       </p>
     </footer>
   )

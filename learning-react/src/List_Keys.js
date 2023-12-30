@@ -15,19 +15,26 @@ const List_Keys = ({ ItemObj, handleDelete, handlechange }) => {
                     {ItemObj.length > 0
                         ?
                         (ItemObj.map((item) => (
-                            <li className='list-item' key={item.id}>
-                                <div className="checkbox">
-                                <input type="checkbox" name="checkbox" id='checkbox'
+                            <li className=' form-check form-switch' key={item.id}>
+                                <input
+                                    type="checkbox"
+                                    name="checkbox"
+                                    class="form-check-input"
+                                    id="flexSwitchCheckChecked"
                                     checked={item.checked}
-                                    onChange={() => (handlechange(item.id))} />
-                                </div>
-                                <label htmlFor="checkbox" className='item-data'>
+                                    onChange={() => (handlechange(item.id))}
+                                />
+
+                                <label
+                                    htmlFor="flexSwitchCheckChecked"
+                                    className=' form-check-label item-data'>
                                     {item.data}
                                 </label>
                                 <button className='list-btn'
                                     onClick={() => (handleDelete(item.id))}>
-                                    <i className="bi bi-shield-x"></i>
+                                    <i className="bi bi-bookmark-x-fill"></i>
                                 </button>
+
                             </li>
                         )))
                         // showing the error message if there is no list
