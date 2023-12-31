@@ -1,0 +1,16 @@
+------------------------------ useEffect Hook --------------------------
+
+1.useEffect us used when the specified dependency or state get changed the useEffect
+  Invoke and work the code inside inside the useEffect function.
+
+2.it has two argument function , dependency or element  Array [] , we specify the state in this Array
+  when this element state changed the useEffect code Invoke .
+
+3.useEffect run when the specified element is changed or distrubed .
+
+4. If no element or dependency mentioned in array it excute at the time of Rendering.
+
+Code : 
+useEffect(()=> {
+    //Logic
+},[element])

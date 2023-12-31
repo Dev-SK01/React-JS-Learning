@@ -15,3 +15,5 @@
 6. Component are reusable. 
 
 7. Raw Object Cannot be Used in ReactJS.
+
+8.React Use JSX to use js inside Component.

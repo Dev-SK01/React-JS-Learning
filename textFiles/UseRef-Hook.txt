@@ -1,0 +1,11 @@
+------------------- USEREF HOOK IN React JS ----------------------
+
+1.USEREF Is used to getback the focus to the previous element.
+
+2. it has current property & ref attribute --> in ref we mention the the HOOK var.
+
+Example :
+
+const USEREF = useRef();
+
+< input autofocus ref=USEREF>

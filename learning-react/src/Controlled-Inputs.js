@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { List_Keys } from './List_Keys';
 import './App.css'
 import { ExampleUSeState } from './Use_State';
@@ -10,8 +10,11 @@ const ParsedLocalList = JSON.parse(localStorage.getItem('ListData'));
 
 function Controlled_Inputs() {
 
-    // list and keys
-    const [itemobj, setItem] = useState(ParsedLocalList)
+
+    // Use Ref
+    const backToInput = useRef();
+    // list and keys Use State
+    const [itemobj, setItem] = useState( ParsedLocalList || [])
 
     function handlechange(id) {
         const list_item = itemobj.map((item) => (
@@ -54,12 +57,14 @@ function Controlled_Inputs() {
             // clearing the input after list added
             setListItem('');
         }
-// ------------------------------- Components -_-____________-
+        // ------------------------------- Components -_-____________-
         return (
             <>
                 <form className='List-form' onSubmit={handleListSubmit}>
                     {/* Input Field to get the list */}
                     <input
+                        autoFocus
+                        ref={backToInput}
                         type="text"
                         id='list-input'
                         placeholder='Enter Your List To Add'
@@ -69,8 +74,11 @@ function Controlled_Inputs() {
                         className='input'
                     />
                     <button
-                        type='submit' className='add-btn'>
-                      <i className="bi bi-check2-circle"></i>
+                        type='submit' 
+                        className='add-btn'
+                        onClick={() => {backToInput.current.focus()}}
+                    >
+                        <i className="bi bi-check2-circle"></i>
                     </button>
                 </form>
 
@@ -91,7 +99,8 @@ function Controlled_Inputs() {
                 <List_Keys
                     ItemObj={itemobj}
                     handleDelete={handleDelete}
-                    handlechange={handlechange} 
+                    handlechange={handlechange}
+                    
                 />
 
             </section>

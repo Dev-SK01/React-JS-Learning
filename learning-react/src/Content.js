@@ -1,6 +1,7 @@
 import React from 'react'
 import { Controlled_Inputs } from './Controlled-Inputs';
 import Color_show from './Color_show';
+import FetchApi from './fetchAPI/FetchApi';
 
 
 
@@ -14,6 +15,8 @@ export const Content = () => {
             <Controlled_Inputs />
 
             <Color_show />
+
+            <FetchApi />
             
         </>
     )
