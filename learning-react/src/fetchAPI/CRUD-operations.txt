@@ -1,0 +1,17 @@
+------------------------------ CRUD Operations Using Json Server ---------------
+
+1. GET , POST , UPDATE , PATCH , DELETE these are the methods 
+
+2.fetch has a options object , it has method , header{} , body 
+
+3.method : 'type os method' , it specifies the method of the operation , 
+
+4. headers {} --> it is object , it specifies the type of the sending data to the server.
+
+5. body : send data , it contains the actual send data to to the server .
+
+6. PATCH --> update the existing value .
+
+7. for updating and deleting we need to specify the id in the url.
+
+8.json needs a ID property at time of post

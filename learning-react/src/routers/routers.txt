@@ -1,0 +1,10 @@
+--------------------------------- React Routers  -----------------------
+
+1.Basically react router are routing the components in the react appliactions .
+
+2. it like HTML anchor tag. its redirects us to the next page butin react we redirect into
+   the react application.
+
+3.Single Page Application SPA .
+
+4. We use React-Router-dom Package to build SPA.
