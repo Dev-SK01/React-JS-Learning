@@ -1,0 +1,82 @@
+--------------------------------- React Routers  -----------------------
+
+1.Basically react router are routing the components in the react appliactions .
+
+2. it like HTML anchor tag. its redirects us to the next page butin react we redirect into
+   the react application.
+
+3.Single Page Application SPA .
+
+4. We use React-Router-dom Package to build SPA.
+
+5.Install react-router-dom package 
+
+6. import browserRouter to your index.js file 
+
+7.wrap the BrowserRouter component .
+
+8. <Routes> </Routes> Routes component specifies the route 
+
+9. Inside the route we can specify the path and rendering element.
+
+<Route path="/" element={<YourElement />}
+
+To link like anchor tag it has <Link> component
+
+10.<Link to="same to routes path /"> <Link>
+
+11.HashRouter --> puts # in the link 
+
+12.StaticRouter --> used to static path routing
+
+13.MemoryRouter --> uses memory to route to the path
+
+14. We can specify the path with id this id is any number or string
+
+  <route path="path/id"> --> its redirect to the given path with the id
+  in <Link to="path/2"> --> it tells the id for the page
+
+15. when we mention the path it path/anotherpath --> in V6 it goes  direct to path.
+
+16. <Route path="*" element={<Error />}> if no path is  mentioned it redirects to the that component.
+
+
+-------------------------------- NESTED ROUTES -------------------------
+
+1. We can nest the route using route component
+
+<route path='rootpath'
+  <route path="rootpath to another" element={<pathEl />}
+</route>
+
+2. the above mention syntax the root route we dont need to mention the element.
+
+3. if the root path path has a element we mention index
+ <route index element={<RootPathEl />} >
+
+4.<Outlet /> --> shows the nested element current Component.
+
+-----------------------------------------------------------------------------
+EXample : 
+-----------
+
+<Link to='/' > Root </Link>
+<Link to='nested' > Nested</Link>
+
+<Routes>
+<Route path='/' element={<root />}/>
+//nested route 
+<Route path='nested' element={<LINKS />} 
+   <Route path=':id' element ={<Element />} />
+   < Route path = '/newnest' element ={<newEl />}
+/>
+</Routes>
+
+In Links Component  
+--------------------
+
+<Link to='1' > With Id </Link>
+<Link to='newnest' > NewNest </Link>
+
+<Outlet> --> outlet renders the clicked page
+

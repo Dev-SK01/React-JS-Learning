@@ -1,7 +1,7 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useState } from 'react'
 import { List_Keys } from './List_Keys';
 import './App.css'
-import { ExampleUSeState } from './Use_State';
+// import { ExampleUSeState } from './Use_State';
 import { Footer } from './Footer';
 
 const ParsedLocalList = JSON.parse(localStorage.getItem('ListData'));
@@ -10,10 +10,6 @@ const ParsedLocalList = JSON.parse(localStorage.getItem('ListData'));
 
 function Controlled_Inputs() {
 
-
-    // Use Ref
-    const backToInput = useRef();
-    // list and keys Use State
     const [itemobj, setItem] = useState( ParsedLocalList || [])
 
     function handlechange(id) {
@@ -64,7 +60,6 @@ function Controlled_Inputs() {
                     {/* Input Field to get the list */}
                     <input
                         autoFocus
-                        ref={backToInput}
                         type="text"
                         id='list-input'
                         placeholder='Enter Your List To Add'
@@ -76,7 +71,6 @@ function Controlled_Inputs() {
                     <button
                         type='submit' 
                         className='add-btn'
-                        onClick={() => {backToInput.current.focus()}}
                     >
                         <i className="bi bi-check2-circle"></i>
                     </button>

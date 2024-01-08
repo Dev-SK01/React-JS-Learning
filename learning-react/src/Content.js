@@ -6,7 +6,6 @@ import SocialMedia from './social-media/SocialMedia';
 
 
 
-
 // -------------   Main Content Component -------------
 export const Content = () => {
 
@@ -18,8 +17,10 @@ export const Content = () => {
             <Color_show />
 
             <FetchApi />
-            
+            {/* react router for social media */}
+          
             <SocialMedia />
+
         </>
     )
 }

@@ -1,0 +1,11 @@
+ ------------------------------------ USE NAVIGATE ----------------------
+
+ 1. It is used to navigate the page.
+
+ 2. when we call the navigate function it is goto the path mentioned in the param.
+
+ SYNTAX : 
+
+ const var = useNavigate();
+
+ var('/new')
