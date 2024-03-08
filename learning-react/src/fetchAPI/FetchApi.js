@@ -31,7 +31,7 @@ function FetchApi() {
       (async () => fetchData())();
     }, 2000);
 
-  }, [])
+  }, [userData])
 
   async function UpdateData() {
     const API_URL = ' http://localhost:3001/UserData';

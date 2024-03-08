@@ -1,16 +1,17 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { List_Keys } from './List_Keys';
 import './App.css'
 // import { ExampleUSeState } from './Use_State';
 import { Footer } from './Footer';
 
-const ParsedLocalList = JSON.parse(localStorage.getItem('ListData'));
 
 // -------------------------------------------------------
 
 function Controlled_Inputs() {
+    const ParsedLocalList = JSON.parse(localStorage.getItem('ListData'));
 
-    const [itemobj, setItem] = useState( ParsedLocalList || [])
+
+    const [itemobj, setItem] = useState(ParsedLocalList || [])
 
     function handlechange(id) {
         const list_item = itemobj.map((item) => (
@@ -69,7 +70,7 @@ function Controlled_Inputs() {
                         className='input'
                     />
                     <button
-                        type='submit' 
+                        type='submit'
                         className='add-btn'
                     >
                         <i className="bi bi-check2-circle"></i>
@@ -94,7 +95,7 @@ function Controlled_Inputs() {
                     ItemObj={itemobj}
                     handleDelete={handleDelete}
                     handlechange={handlechange}
-                    
+
                 />
 
             </section>
