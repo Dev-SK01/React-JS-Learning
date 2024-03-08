@@ -9,9 +9,11 @@ const Header = () => {
                 <h1 style={{ fontSize: '2rem', fontWeight: 'bolder' }}>Notes Edu</h1>
             </header>
            
-                <Link to="/" style={{marginRight:'.2rem'}} >Home</Link>
-                <Link to="/color" style={{marginRight:'.2rem'}} >Color</Link>
-                <Link to="/fetch">Fetch</Link>
+                <Link to="/" style={{marginRight:'1rem'}} >Home</Link>
+                <Link to="/color" style={{marginRight:'1rem'}} >Color</Link>
+                <Link to="/fetch" style={{marginRight:'1rem'}}>Fetch</Link>
+                <Link to="/social" style={{marginRight:'1rem'}}>Social</Link>
+
 
          
         </>
