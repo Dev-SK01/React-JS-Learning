@@ -2,7 +2,7 @@
 
   1. we need to create each css file for each component.
 
-  2. we import that css and use in our html component code.
+  2. we import that css and use in our html component code. via JS import
 
   3. We can pass object as object in JSX.
 

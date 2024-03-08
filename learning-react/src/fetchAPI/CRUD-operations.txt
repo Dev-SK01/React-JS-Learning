@@ -4,7 +4,7 @@
 
 2.fetch has a options object , it has method , header{} , body 
 
-3.method : 'type os method' , it specifies the method of the operation , 
+3.method : 'type of method' , it specifies the method of the operation , 
 
 4. headers {} --> it is object , it specifies the type of the sending data to the server.
 

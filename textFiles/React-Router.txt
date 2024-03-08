@@ -1,0 +1,21 @@
+ ------------------------------ React Router ------------------
+ 1.react Router Renders the React Component with the specific path.
+
+ 2. <App/> must be inside in <BrowserRouter /> component
+
+ 3.<Routes> ---> inside the routes component we specify the components path
+
+4. <Route path='/' element={<Component />} > --> mention the path of the of the components
+   react reneder the component when the path is located.
+
+5. <Link to='path'> </Link> --> links the route to the path like anchor tag.
+
+
+---------------- Other types of Router ---------
+1.hashRouter --> the link path will be #
+
+2.memeoryRouter --> routes stores in the memory based on the memeory react render the component
+
+3.StaticServerRouter --> 
+
+4.HistoryRouter --> based on the browser history router

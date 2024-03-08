@@ -10,7 +10,7 @@
 
 4.ctrl + alt + r --> used to get the snippet.
 
-5.<component name /> --> call the component.
+5.< component name /> --> call the component.
 
 6. Component are reusable. 
 

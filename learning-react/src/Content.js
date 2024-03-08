@@ -2,7 +2,6 @@ import React from 'react'
 import { Controlled_Inputs } from './Controlled-Inputs';
 import Color_show from './Color_show';
 import FetchApi from './fetchAPI/FetchApi';
-import SocialMedia from './social-media/SocialMedia';
 
 
 
@@ -19,7 +18,6 @@ export const Content = () => {
             <FetchApi />
             {/* react router for social media */}
           
-            <SocialMedia />
 
         </>
     )

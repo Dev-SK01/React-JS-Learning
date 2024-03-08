@@ -70,6 +70,7 @@ EXample :
    <Route path=':id' element ={<Element />} />
    < Route path = '/newnest' element ={<newEl />}
 />
+
 </Routes>
 
 In Links Component  
@@ -78,5 +79,5 @@ In Links Component
 <Link to='1' > With Id </Link>
 <Link to='newnest' > NewNest </Link>
 
-<Outlet> --> outlet renders the clicked page
+<Outlet> --> outlet renders the clicked page means nestes route component
 

@@ -1,6 +1,7 @@
 ------------------------------ USE PARAMS In React ----------------
 
-1.useParams() --> it returns a object and it take the paramaneter from other page .
+1.useParams() --> it returns a object and it take the parameter from other routeing page  .
+  Route component page if the id mentions that stores that id usnig Useparams();
 
 2. it returns object for the param we received.
 
@@ -9,4 +10,4 @@ synatx :
 
 const param = useParams();
 
-consoel.log({param}); // it is object
+console.log({param}); // it is object

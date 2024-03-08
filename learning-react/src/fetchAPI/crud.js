@@ -1,26 +1,17 @@
-async function apiRequest() {
-    const API_URL = ' http://localhost:3500/UserData';
+ export default async function apiRequest(API_URL, header = {} , errmsg = null ) {
 
-    const postData = {
-        UserId: "hgjksdhg",
-        password: "admin@123",
-        id:4
-    }
-
-    const postOptions = {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body:JSON.stringify(postData)
-    }
+    
     try {
-        const response = await fetch(API_URL, postOptions);
+        const response = await fetch(API_URL, header);
         if (!response.ok) throw Error('Reload The Page!');
-        console.log(response.json())
+        // console.log(response.json())
     } catch (err) {
-    console.log(err.Message); 
+    // console.log(err.Message); 
+    errmsg = err.message;
+    }
+    finally{
+        return errmsg;
     }
 }
 
-(async()=>( await apiRequest()))();
+//(async()=>(await apiRequest()))();  calling the async function as async 

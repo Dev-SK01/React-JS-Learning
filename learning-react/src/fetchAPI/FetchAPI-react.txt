@@ -1,6 +1,6 @@
   --------------------------- Fetch API In React ----------------------
 
-1.UseEffect Is used to fetch the api .
+1.UseEffect Is used to fetch the api . traditionally
 
 2. error handling and other aremanage at the time of the fetching data from the server
 
@@ -9,6 +9,8 @@
 4. Converting that response into js objects.
 
 5. fetch returns the promise object .
+
+6.Using the useState() --> controlling the data fetch error idf occurs
 
 ------------------------------- CRUD ------------------------------
 

@@ -1,7 +1,7 @@
 ------------------------------ useEffect Hook --------------------------
 
-1.useEffect us used when the specified dependency or state get changed the useEffect
-  Invoke and work the code inside inside the useEffect function.
+1.useEffect is used when the specified dependency or state get changed the useEffect
+  Invoke and work the code inside  the useEffect function.
 
 2.it has two argument function , dependency or element  Array [] , we specify the element in this Array
   when this element state changed the useEffect code Invoke .
@@ -9,9 +9,9 @@
 3.useEffect run when the specified element is changed or distrubed .
 
 4. If no element or dependency mentioned in array it excute at the time of Rendering.
-   work on whole document fiirst time.
+   work on whole document first time.
 
-5.we cannot specify the async funciton inside the useEffect funciton inside callback funciton 
+5.we cannot specify the async function inside the useEffect fuction inside callback funciton 
   we can spicify.
 
 Code : 

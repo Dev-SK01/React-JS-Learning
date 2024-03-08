@@ -11,7 +11,7 @@
 
 5. The props are OBJECT
 
-6.We can set Default props for Nothing Props Is Passed.
+6.We can set Default props for no Props Is Passed.
 
  component.defaultProps{
     property : value,
@@ -19,6 +19,7 @@
 
 7. Props Expanined in Footer.js File ^_^ ;
 
-8. passing the data via the component calling arrtibute.
+8. passing the data via the component calling attriibute.
 
 <Header data={somedata} />
+funciton Header ({somedata}){} --> using the prop
