@@ -8,7 +8,7 @@ function App() {
   return (
     <div className='App'>
       {/* calling the other components */}
-     <Header />
+     <Header title='React JS' />
      <Content />
     </div>
   );

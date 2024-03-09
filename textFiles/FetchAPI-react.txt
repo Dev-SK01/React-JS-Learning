@@ -1,0 +1,29 @@
+  --------------------------- Fetch API In React ----------------------
+
+1.UseEffect Is used to fetch the api . traditionally
+
+2. error handling and other aremanage at the time of the fetching data from the server
+
+3. fetching the targeted API endpoint and getting the response 
+
+4. Converting that response into js objects.
+
+5. fetch returns the promise object .
+
+6.Using the useState() --> controlling the data fetch error idf occurs
+
+------------------------------- CRUD ------------------------------
+
+1. GET , POST , UPDATE , PATCH , DELETE these are the methods 
+
+2.fetch has a options object , it has method , header{} , body 
+
+3.method : 'type os method' , it specifies the method of the operation , 
+
+4. headers {} --> it is object , it specifies the type of the sending data to the server.
+
+5. body : send data , it contains the actual send data to to the server .
+
+6. PATCH --> update the existing value .
+
+7. for updating and deleting we need to specify the id in the url .

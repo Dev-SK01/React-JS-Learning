@@ -2,7 +2,7 @@
 
 1.useParams() --> it returns a object and it take the parameter from other routeing page  .
   Route component page if the id mentions that stores that id usnig Useparams();
-
+ it take the ID from the url in the route 
 2. it returns object for the param we received.
 
 

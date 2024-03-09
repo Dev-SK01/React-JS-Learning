@@ -1,11 +1,13 @@
 import React from 'react'
+import './social.css'
 import Navigation from './Navigation'
 
 const Social = () => {
   return (
     <>
-    <div>Social Media</div>
-    <Navigation />
+      <h1 style={{ fontWeight: 'bolder' }}>Social Dude</h1>
+      {/* calling the nav compont */}
+      <Navigation />
     </>
   )
 }

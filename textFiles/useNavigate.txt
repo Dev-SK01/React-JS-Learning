@@ -2,10 +2,10 @@
 
  1. It is used to navigate the page.
 
- 2. when we call the navigate function it is goto the path mentioned in the param.
+ 2. when we call the navigate function it is goto the path mentioned in the path .
 
  SYNTAX : 
 
- const var = useNavigate();
+ const variable = useNavigate();
 
- var('/new')
+ variable('/new');
