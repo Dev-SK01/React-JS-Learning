@@ -1,0 +1,10 @@
+------------------------------- AXIOS REACT --------------------------
+1.AXIOS is used to handle the api requests.
+
+2. create a jsfile for AXIOS and import the package. 
+
+3. export default axios.create({
+    baseURL:"API_ENDPONT"
+}) --> create method we need to psss object.
+
+4.
