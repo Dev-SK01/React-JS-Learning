@@ -1,7 +1,7 @@
 import React from 'react'
 import './social.css';
 
-const Post = ({ Posts, handleSearch }) => {
+const Post = ({ Posts, handleSearch ,deletePost }) => {
   return (
     <>
       <h1>Posts</h1>
@@ -21,7 +21,7 @@ const Post = ({ Posts, handleSearch }) => {
             <div className='post' key={post.id}>
               <p className='title'>{post.title}</p>
               <p className='body'>{post.body}</p>
-              <button>Delete</button>
+              <button onClick={(e)=>(deletePost(post.id))}>Delete</button>
             </div>
           )))
           : <p>No Posts Found</p>

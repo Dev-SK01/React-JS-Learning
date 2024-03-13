@@ -5,7 +5,7 @@ import FetchApi from './fetchAPI/FetchApi';
 import Social from './socialMedia/Social';
 import Newpost from './socialMedia/Newpost'
 import Post from './socialMedia/Post';
-import { Route, Routes } from 'react-router-dom'
+import { Route, Routes, useNavigate } from 'react-router-dom'
 import Home from './socialMedia/Home';
 
 
@@ -43,7 +43,9 @@ const POSTS = [
         body: "let him seek forgiveness for repudiation, but there are other things, or let him flee, but he is, but there is pleasure, we can all be pleasures; there is no pain, nor"
     },]
     const [posts, setPosts] = useState(POSTS || []);
-
+    const[title , setTitle] = useState('');
+    const [content , setContent] = useState('');
+    const navigate = useNavigate();
     // search feature 
     function handleSearch(e) {
         const searchData = e.target.value.toLowerCase();
@@ -58,6 +60,24 @@ const POSTS = [
         }else{
             setPosts(POSTS);
         }
+    }
+
+    // Create new post Feature 
+
+    function createNewPost(e){
+        e.preventDefault();
+        const id = posts.length ? posts.length  + 1 : 1;
+        const newPost = {userId: 1, id:id , title: title , body: content};
+        setPosts(()=>([...posts,newPost]))
+        setContent('');
+        setTitle('');
+        navigate('/social/post');
+    }
+    // delete post feature
+    function deletePost(id){
+     const findPost = posts.filter((post) => (post.id !== id) );
+     console.log(findPost);
+     setPosts(findPost);
     }
     // setting the post 
 
@@ -74,11 +94,15 @@ const POSTS = [
                         element={<Post 
                             Posts={posts} 
                             handleSearch={handleSearch} 
+                            deletePost={deletePost}
                             />}
                     />
                     <Route path='createpost'
                         element={<Newpost 
-                            setposts={setPosts} />}
+                            setTitle = {setTitle}
+                            setContent = {setContent}
+                            createNewPost ={createNewPost} 
+                            />}
                     />
                     <Route index
                         element={<Home 

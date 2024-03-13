@@ -7,4 +7,12 @@
     baseURL:"API_ENDPONT"
 }) --> create method we need to psss object.
 
-4.
+4.get('/endpoints') --> used to GET the response.
+
+5.data --> returns the data
+
+6. post('endpoint',post object) --> used to POST the data like fetch methods
+
+7.delete('endpoint/id') --> normal DELETE method AXIOS made easy.
+
+8.put('endpoint/id' , patchobj) --> PATCH the data.
