@@ -9,7 +9,7 @@
 
 4.get('/endpoints') --> used to GET the response.
 
-5.data --> returns the data
+5.data --> returns the data , status ,header --> return the respective data
 
 6. post('endpoint',post object) --> used to POST the data like fetch methods
 

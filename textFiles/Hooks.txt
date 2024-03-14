@@ -9,7 +9,7 @@
 
 4.cannot call Hooks In conditional Statements.
 
-5. when we call the funcion inside hook it excutes page reloads.to avoid we
+5. when we call the function inside hook it excutes page reloads.to avoid we
    need to call inside anonymous function. 
 
 --------------------------- USE STATE Hook ----------------
