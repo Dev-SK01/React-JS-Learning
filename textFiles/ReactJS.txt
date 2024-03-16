@@ -45,6 +45,6 @@
 ------------------------------ JSX Javascript XML ----------------
 1.It Differs from HTML.
 
-2.naming and attributes are differ in JSX.
+2.naming and attributes are differ in JSX. We can use Javascript in html
 
 3.{} --> used to js in JSX -->  <p>{js}</p>

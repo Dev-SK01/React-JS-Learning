@@ -8,4 +8,4 @@
 
  4. () ==> use anonymous function to solve the issue.
 
- 5. <p onClick{callback}> </p>
+ 5. <p onClick={callback}> </p>

@@ -3,7 +3,7 @@
 
  2. <App/> must be inside in <BrowserRouter /> component
 
- 3.<Routes> ---> inside the routes component we specify the components path
+ 3.<Routes> ---> inside the routes component we specify the components path. Root of the ROute component
 
 4. <Route path='/' element={<Component />} > --> mention the path of the of the components
    react reneder the component when the path is located.

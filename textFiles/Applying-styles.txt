@@ -8,4 +8,4 @@
 
   4. we can use inline style In JSX
 
-  5. We can use Bootstrap and other css libraries also.
+  5. We can use Bootstrap || TailWindcSS and other css libraries also.  

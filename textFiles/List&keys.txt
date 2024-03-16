@@ -10,3 +10,5 @@
 4. When change the property of the object we call whole object using 
    {....objectName , property} --> this call the whole object and change the 
    specified property in the object.
+
+5. for list key is a unique identifier in react
