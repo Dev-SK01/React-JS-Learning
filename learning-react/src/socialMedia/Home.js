@@ -1,6 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import DataContext from '../context/DataContext'
+import useWindow from './Hooks/useWindow'
 
-const Home = ({ posts , handleSearch }) => {
+const Home = () => {
+    const{posts,handleSearch} =useContext(DataContext);
+    // const window = useWindow()
+    // console.log(window)
     return (
         <>
 

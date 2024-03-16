@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './social.css'
-const Newpost = ({setTitle,setContent,createNewPost}) => {
+import DataContext from '../context/DataContext'
+const Newpost = () => {
+  const {setTitle , setContent , createNewPost} =useContext(DataContext);
   return (
     <>
     <h1>Create Post</h1>

@@ -1,0 +1,6 @@
+-------------------------- Deploying the React JS App ------------
+1. Clean the all error before build the  project
+
+2. delete unecessay dependencies in your project
+
+3. use Git & GitHub to deploy the app

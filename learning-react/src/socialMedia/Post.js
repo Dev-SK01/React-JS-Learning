@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './social.css';
+import DataContext from '../context/DataContext';
 
-const Post = ({ Posts, handleSearch ,deletePost }) => {
+const Post = () => {
+  const {posts ,handleSearch,deletePost} =useContext(DataContext);
   return (
     <>
       <h1>Posts</h1>
@@ -16,8 +18,8 @@ const Post = ({ Posts, handleSearch ,deletePost }) => {
         />
       </form>
       <section className='posts'>
-        {Posts.length > 0 ?
-          (Posts.map((post) => (
+        {posts.length > 0 ?
+          (posts.map((post) => (
             <div className='post' key={post.id}>
               <p className='title'>{post.title}</p>
               <p className='body'>{post.body}</p>

@@ -1,0 +1,40 @@
+---------------------------- CREATE CONTEXT IN REACT -------------------
+1. Context are used to overcome the prop in the components. it is efficient way to share the data 
+to components  
+
+2. import create context to create a context
+
+3. create variable for DataContext = createContext({}) --> pass the object
+
+4. return () export  DataProvider(param){
+    <DataContext.provider value={{}}>
+       {param}
+    <DataContext.provider > 
+
+}
+
+5. param -- tells the components lists to send the data 
+
+6. .provider provide the data to the components
+
+7. values --> send the actual data to the component.
+
+8. finally export the DataContext as default.
+
+
+--------------- Usage of Context ------------------
+1.import DataProvider 
+
+2. wrap the all the childrens to send the data. wrap in the function component return stament.
+   <DataProvider>
+
+   //childrens 
+
+   <DataProvider>
+
+3. write your logic inside the DataProvider function before return statement
+
+4. in function value object send the data variable.
+
+5. use the send data in the component by 
+  const {sendData} = useContect(DataContext)

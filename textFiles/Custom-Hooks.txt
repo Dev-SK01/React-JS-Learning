@@ -1,12 +1,12 @@
 --------------------------- CUSTOM HOOKS IN REACT JS --------------------------
 1. We can write our own react hook  inn react js 
 
-2.react-use package has many custom hooks hooks
+2.react-use package has many custom hooks
 
-3. before creating custom hook we use  use-hookname
+3.before creating custom hook we use  use-hookname
 
 4. hooks is used by anyone create hook as multi use
 
-5. custom hooks are normal JS function with areturn statement.
+5.custom hooks are normal JS function with a return statement.
 
 6.we can use react Inbuilt hooks to to our custom hooks.
